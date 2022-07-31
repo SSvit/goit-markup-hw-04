@@ -66,7 +66,7 @@ img {
 
 .container-flex {
     display: flex;
-    align-items: center;
+    align-items: baseline;
 }
 
 /* ХЕДЕР Логотип -Studio- */
@@ -201,30 +201,8 @@ img {
 
 .header-icon:hover,
 .header-icon:focus {
-    color: var(--accent-hover-color);
+    fill: var(--accent-hover-color);
 }
-
-
-.auth-nav.link::before {
-    /* display: block; */
-    content: "";
-    height: 16px;
-    /* display: flex; */
-    /* justify-content: center;
-    align-items: center; */
-    /* background-size: contain; */
-    /* background-repeat: no-repeat; */
-    /* color: #212121;; */
-    background-color: var(--background-darker-than-white);
-}
-
-/* .icon-envelope::before {
-    background-image: url(../images/envelope.svg);
-}
-
-.icon-phone::before {
-   background-image: url(../images/phone.svg);
-} */
 
      /* Секція 1 */
 /* Герой - заголовок */
@@ -456,11 +434,13 @@ img {
 .userpic-icon {
     fill: #AFB1B8;
 }
-.userpic-item:hover {
+.userpic-item:hover,
+.userpic-item:focus {
     background-color: var(--accent-hover-color);
 }
 
-.userpic-item:hover .userpic-icon {
+.userpic-item:hover .userpic-icon,
+.userpic-item:focus .userpic-icon {
     fill: var(--primary-white-color);
 }
 
@@ -510,6 +490,50 @@ img {
 .link-nav {
     color: rgba(255, 255, 255, 0.6);    
     text-decoration: none;
+}
+/* Футер Приєднуйтесь */
+.footer-flex {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    /* margin-left: 70px; */
+}
+.footer-soc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+}
+
+.footer-soc-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer-soc-item {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;    
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.soc-item {
+    fill: var(--primary-white-color);
+}
+
+.footer-soc-item:hover,
+.footer-soc-item:focus {
+    background-color: var(--accent-hover-color);
 }
 
 /* Портфоліо */
