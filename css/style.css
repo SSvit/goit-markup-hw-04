@@ -185,6 +185,27 @@ img {
     letter-spacing: 0.02em;
 }
 
+.auth-nav.link::before {
+    /* display: block; */
+    content: "";
+    height: 16px;
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+    /* background-size: contain; */
+    /* background-repeat: no-repeat; */
+    /* color: #212121;; */
+    background-color: var(--background-darker-than-white);
+}
+
+/* .icon-envelope::before {
+    background-image: url(../images/envelope.svg);
+}
+
+.icon-phone::before {
+   background-image: url(../images/phone.svg);
+} */
+
      /* Секція 1 */
 /* Герой - заголовок */
 .section-hero {
@@ -270,6 +291,7 @@ img {
 
 /* Стилiзацiя заголовку h3 */
 .feature-list .title {
+    margin-top: 30px;
     margin-bottom: 10px;
     color: var(--primary-text-color);
 
@@ -298,6 +320,37 @@ img {
 
 .feature-list-item{
     flex-basis: calc((100% - 3 * 30px) / 4);
+}
+
+.feature-list-item::before {
+    display: block;    
+    content: "";
+    width: 270px;
+    height: 120px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    background-size: 70px 65px;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* color: #212121;; */
+    background-color: var(--background-darker-than-white);
+}
+
+.icon-antenna::before {
+    background-image: url(../images/antenna.svg);
+}
+
+.icon-clock::before {
+    background-image: url(../images/clock.svg);
+}
+
+.icon-diagram::before {
+    background-image: url(../images/diagram.svg);
+}
+
+.icon-astronaut::before {
+    background-image: url(../images/astronaut.svg);
 }
 
      /* Секція 3 */
@@ -367,14 +420,28 @@ img {
     display: flex;
     justify-content: center;
     gap: 10px;
+    padding: 0;
 }
 
 .userpic-item {
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background-color: turquoise;
-    display: block;
+    /* background-color: #2196F3; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.userpic-icon {
+    fill: #AFB1B8;
+}
+.userpic-item:hover {
+    background-color: var(--accent-hover-color);
+}
+
+.userpic-item:hover .userpic-icon {
+    fill: var(--primary-white-color);
 }
 
      /* Футер */
