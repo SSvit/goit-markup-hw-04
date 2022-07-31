@@ -185,6 +185,26 @@ img {
     letter-spacing: 0.02em;
 }
 
+
+.header-icon {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: var(--title-text-color);
+    background-position: center;
+    background-size: cover;
+    /* color: var(--title-text-color); */    
+    /* align-items: center;
+    justify-content: center; */
+}
+
+
+.header-icon:hover,
+.header-icon:focus {
+    color: var(--accent-hover-color);
+}
+
+
 .auth-nav.link::before {
     /* display: block; */
     content: "";
