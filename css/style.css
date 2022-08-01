@@ -380,7 +380,10 @@ img {
 }
  
      /* Секція 4 */
-/* Стилiзацiя заголовку h3 */
+.work-list {
+    margin: -15px;
+}
+
 .section-image {
     margin: 15px;
     list-style: none;
@@ -388,11 +391,7 @@ img {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
 }
-
-.work-list {
-    margin: -15px;
-}
-
+/* Стилiзацiя заголовку h3 */
 .work-list .title {
     margin-bottom: 10px;
     color: var(--primary-text-color); 
@@ -446,7 +445,6 @@ img {
     fill: var(--primary-white-color);
 }
 
-
 /* Сукція 5 */
 .page-coworker {
     padding-top: 94px;
@@ -491,9 +489,7 @@ img {
 }
 
 /* Загальний контейнер футер */
-.container-icon {   
-    /* padding-left: 200px;  */
-    
+.container-icon {        
     display: flex;
     align-items: baseline;    
 }
