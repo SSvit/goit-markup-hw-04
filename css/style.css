@@ -385,6 +385,8 @@ img {
     margin: 15px;
     list-style: none;
     background-color: var(--primary-white-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
 }
 
 .work-list {
@@ -446,22 +448,47 @@ img {
 
 
 /* Сукція 5 */
-.section-colleague 
+.page-coworker {
+    padding-top: 94px;
+    padding-bottom: 50px;
+}
 
+.pic {
+    justify-content: center;
+}
 
+.pic-icon {
+    width: 170px;
+    height: 92px;
+    padding: 16px 32px;
+    margin-left: 30px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
 
+.pic-icon:first-child {
+    margin-left: 0;
+}
+
+.pic-item {
+    fill: #AFB1B8;    
+}
+
+.pic-item:hover,
+.pic-item:focus {
+    fill: var(--accent-hover-color);
+}
 
      /* Футер */
 .footer {
-    margin: 0 auto;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    padding-left: 15px;
-    padding-right: 15px;
+    background: var(--background-very-gray);
+    margin: 0 auto;   
 }
 /* Загальний контейнер футер */
 .container-icon {   
     /* padding-left: 200px;  */
+    padding-top: 60px;
+    padding-bottom: 60px;
     display: flex;
     align-items: baseline;    
 }
@@ -670,4 +697,3 @@ img {
     /* margin: auto; */
     /* width: 1600px; */
 }
-/* Фон для секції портфоліо */
