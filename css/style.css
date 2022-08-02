@@ -495,6 +495,7 @@ img {
 }
 
 .footer-address {
+    margin-top: 20px;
     font-style: normal;
 }
 
@@ -515,7 +516,8 @@ img {
 }
 
 /* Стилiзує нaвiгацiю */
-.footer-nav  {    
+.footer-nav  {   
+    margin: 0; 
     padding-left: 0;
     color: var(--primary-white-color);
 
@@ -526,7 +528,7 @@ img {
 }
 
 .footer-nav li {
-    padding-bottom: 9px;
+    margin-bottom: 9px;
 }
 
 .link-nav {
@@ -534,6 +536,9 @@ img {
     text-decoration: none;
 }
 
+.title:last-child {
+    margin-bottom: 0;
+}
 /* Футер Приєднуйтесь */
 .footer-flex {
     justify-content: center;
@@ -603,7 +608,8 @@ img {
     text-align: center;
     letter-spacing: 0.03em;
     cursor: pointer;
-    /* border-radius: 4px; */
+    border-radius: 4px;
+    border: 0;
 }
 
 .button-item:not(:last-child) {
