@@ -157,12 +157,11 @@ img {
 }
 
 /* Пошта та телефон в хедері */
-.auth-nav {
-    display: flex;
-}
 
 /* .auth-nav .item-nav + .item-nav { */
+
 .item-nav {
+    display: flex;
     margin-left: 50px;
 }
 
@@ -171,12 +170,14 @@ img {
     /* padding-bottom: 32px; */
 /* } */
 
-.auth-nav .link {
+.link-search {
+    display: flex;
+    justify-content: center;
+    /* align-self: flex-start; */
+    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
-}
-
-.item-nav .link {
+    /* flex-direction: ; */
     color: var(--title-text-color);
 
     font-weight: 500;
@@ -184,7 +185,6 @@ img {
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
-
 
 .header-icon {
     width: 16px;
@@ -198,6 +198,12 @@ img {
     justify-content: center; */
 }
 
+/* .item-nav .auth-icon {
+    width: 100%;
+    padding-top: 50px;
+    align-items: center;
+    justify-content: center;
+} */
 
 .header-icon:hover,
 .header-icon:focus {
@@ -216,7 +222,7 @@ img {
 }
 
 .hero-title {  
-    margin-top: 106px;
+    /* margin-top: 106px; */
     margin-bottom: 30px;
     color: var(--primary-white-color);  
     font-weight: 900;
@@ -289,7 +295,7 @@ img {
 
 /* Стилiзацiя заголовку h3 */
 .feature-list .title {
-    margin-top: 30px;
+    /* margin-top: 30px; */
     margin-bottom: 10px;
     color: var(--primary-text-color);
 
@@ -325,6 +331,7 @@ img {
     content: "";
     width: 270px;
     height: 120px;
+    margin-bottom: 30px;
     /* display: flex;
     justify-content: center;
     align-items: center; */
@@ -458,10 +465,8 @@ img {
 .pic-icon {
     width: 170px;
     height: 92px;
-    padding: 16px 32px;
+    /* padding: 16px 32px; */
     margin-left: 30px;
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
 }
 
 .pic-icon:first-child {
@@ -477,6 +482,14 @@ img {
     fill: var(--accent-hover-color);
 }
 
+.pic-icon-item {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   border: 1px solid #AFB1B8;
+   border-radius: 4px;
+}
      /* Футер */
 .footer {
     background: var(--background-very-gray);
