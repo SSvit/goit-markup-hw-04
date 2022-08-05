@@ -494,12 +494,23 @@ img {
 }
 
 .pic-item {
-    fill: #AFB1B8;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    color: #AFB1B8;
 }
 
 .pic-item:hover,
-.pic-icon:focus {
+.pic-item:focus {
     fill: var(--accent-hover-color);
+}
+
+.pic-icon-item {
+    fill: currentColor;
 }
 
 /* .pic-icon-item:hover,
@@ -507,15 +518,9 @@ img {
     fill: var(--accent-hover-color);
 } */
 
-.pic-icon-item {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   width: 100%;
-   height: 100%;
-   border: 1px solid #AFB1B8;
-   border-radius: 4px;
-}
+
+
+
      /* Футер */
 .footer {
     background: var(--background-very-gray);
