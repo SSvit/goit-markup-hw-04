@@ -630,7 +630,7 @@ img {
 } */
 
 .footer-soc-item:hover,
-.footer-soc-hover:focus {
+.footer-hover:focus {
     background-color: var(--accent-hover-color);
 }
 
