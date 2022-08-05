@@ -501,7 +501,7 @@ img {
     height: 100%;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-    color: #AFB1B8;
+    fill: #AFB1B8;
 }
 
 /* .pic-item:hover,
@@ -509,14 +509,19 @@ img {
     fill: var(--accent-hover-color);
 } */
 
-.pic-icon-item {
+/* .pic-icon-item {
     fill: currentColor;
-}
+} */
 
-.pic-icon-item:hover,
-.pic-icon-item:focus {
+.pic-item:hover .pic-icon-item,
+.pic-item:focus .pic-icon-item {
     fill: var(--accent-hover-color);
 }
+
+/* .pic-icon-item:hover,
+.pic-icon-item:focus {
+    fill: var(--accent-hover-color);
+} */
 
      /* Футер */
 .footer {
