@@ -163,7 +163,6 @@ img {
 
 .item-nav {
     display: flex;
-    margin-left: 50px;
 }
 
 /* .auth-nav .item-nav {   */
@@ -178,6 +177,7 @@ img {
     align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
+    gap: 50px;
     /* flex-direction: ; */
     
 
@@ -195,7 +195,7 @@ img {
     width: 16px;
     height: 12px;
     margin-right: 10px;
-    fill: var(--title-text-color);
+    fill: currentColor;
     background-position: center;
     background-size: cover;
     /* color: var(--title-text-color); */    
@@ -206,11 +206,10 @@ img {
 .tiny {
     width: 10px;
     height: 16px;
-margin-right: 10px;
-    fill: var(--title-text-color);
+    margin-right: 10px;
+    fill: currentColor;
     background-position: center;
     background-size: cover;
-    /* color: var(--title-text-color); */
     align-items: baseline;
     justify-content: center;
 }
