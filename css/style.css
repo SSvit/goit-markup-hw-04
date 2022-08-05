@@ -504,22 +504,19 @@ img {
     color: #AFB1B8;
 }
 
-.pic-item:hover,
+/* .pic-item:hover,
 .pic-item:focus {
     fill: var(--accent-hover-color);
-}
+} */
 
 .pic-icon-item {
     fill: currentColor;
 }
 
-/* .pic-icon-item:hover,
+.pic-icon-item:hover,
 .pic-icon-item:focus {
     fill: var(--accent-hover-color);
-} */
-
-
-
+}
 
      /* Футер */
 .footer {
@@ -583,6 +580,7 @@ img {
 .title:last-child {
     margin-bottom: 0;
 }
+
 /* Футер Приєднуйтесь */
 .footer-flex {
     justify-content: center;
