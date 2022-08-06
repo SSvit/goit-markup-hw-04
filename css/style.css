@@ -177,7 +177,7 @@ img {
     align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
-    gap: 50px;
+  
     /* flex-direction: ; */
     
 
@@ -188,7 +188,11 @@ img {
 }
 
 .link-search {
-     color: var(--title-text-color);
+    color: var(--title-text-color);
+}
+     
+.search {
+    margin-right: 50px;
 }
 
 .header-icon {
@@ -455,13 +459,21 @@ img {
     border-radius: 50%;
     /* background-color: #2196F3; */
     display: flex;
-    align-items: center;
-    justify-content: center;
+   
+}
+
+.userpic-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+        align-items: center;
+        justify-content: center;
 }
 
 .userpic-icon {
     fill: #AFB1B8;
 }
+
 .userpic-item:hover,
 .userpic-link:focus {
     background-color: var(--accent-hover-color);
@@ -475,7 +487,7 @@ img {
 /* Сукція 5 */
 .page-coworker {
     padding-top: 94px;
-    padding-bottom: 50px;
+    padding-bottom: 94px;
 }
 
 .pic {
@@ -516,6 +528,11 @@ img {
 .pic-item:hover .pic-icon-item,
 .pic-item:focus .pic-icon-item {
     fill: var(--accent-hover-color);
+}
+
+.pic-item:hover,
+.pic-item:focus {
+    border-color: var(--accent-hover-color);
 }
 
 /* .pic-icon-item:hover,
@@ -590,13 +607,18 @@ img {
 .footer-flex {
     justify-content: center;
     align-items: baseline;
+    margin-right: 70px;
+}
+
+.footer-flex:last-child {
+    margin-right: 0;
 }
 
 .footer-soc {
     margin-bottom: 20px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
@@ -606,8 +628,7 @@ img {
 }
 
 .footer-soc-list {
-    margin-left: 70px;
-    margin-top: 0;
+    margin: 0;
     padding-left: 0;
     display: flex;
     justify-content: center;
@@ -621,8 +642,8 @@ img {
     border-radius: 50%;    
     background: rgba(255, 255, 255, 0.1);
     display: flex;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center;
+    justify-content: center; */
 }
 
 .soc-item {
@@ -633,6 +654,13 @@ img {
 .footer-soc-item:focus {
     background-color: var(--accent-hover-color);
 } */
+.footer-hover {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+        justify-content: center;
+}
 
 .footer-soc-item:hover,
 .footer-hover:focus {
@@ -681,6 +709,7 @@ img {
 .button .btn-primary:focus{
     background-color: var(--accent-hover-color);
     color: var(--primary-white-color);
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* Другий список з зображеннями */
@@ -690,8 +719,13 @@ img {
 }
 
 .link {
+    display: flex;
+    text-decoration: none;
+}
+
+.link-box {
     display: block;
-    font-style: normal;
+    
     text-decoration: none;
 }
 
@@ -732,6 +766,7 @@ img {
 } */
           
 .portfolio-team-box {
+    width: 100%;
     padding: 20px 24px;
     border: 1px solid #EEEEEE;
     border-top: 0;
